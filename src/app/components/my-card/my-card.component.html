@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="my-card.component.scss">
+    <title>My Hotal</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand"><img src="assets/logo.jpg" style="margin-top: -20px;margin-left:10px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">Rice & Dall <img src="assets/rice-dall.jpg" class="rounded"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Oils & Gee <img src="assets/oil-gee.jpg" class="rounded"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Herbals & Naturals <img src="assets/herbals-nat.jpg" class="rounded"></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" style="width: 250pt;" id="search"
+                        placeholder="search your products here...">
+                    <span type="button" class="material-symbols-outlined" id="searchIcon"
+                        style="margin-left: -30pt; margin-top: 8pt;">
+                        search
+                    </span>
+                    <button class="btn btn-outline btn-md d-flex" id="cart" data-bs-toggle="tooltip"
+                        title="Click to proceed checkout">
+                        <span style="font-size: 35px; color: brown; margin-left: 12pt;"
+                            class="material-symbols-outlined">
+                            shopping_basket
+                        </span>
+                        <sup><span id="badge1" class="badge bg-danger"></span></sup>
+                    </button>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline btn-md d-flex dropdown-toggle"
+                            data-bs-toggle="dropdown" id="profile"> <span class="material-symbols-outlined"
+                                style="font-size: 35px; color: brown; margin-left: -10pt;">
+                                account_circle
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="profile">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Change password</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div class="card mt-3 shadow-lg p-2 mb-3 bg-body rounded" style="width: 13rem; height: 19rem;">
+            <div class="text-center">
+                <img src="{{myCardInfo.myItem}}" style="width: 100px;" alt="toor-dall">
+            </div>
+            <div class="card-body" style="margin-left: -14px;">
+                <p class="card-title" id="itemName">{{myCardInfo.itemName}}
+                    <span class="d-flex flex-row-reverse">
+                        <img style="margin-top: -20px; margin-right: -12px; width: 18px; height: 18px;"
+                            src="{{myCardInfo.veg}}">
+                    </span>
+                </p>
+                <p id="itemQuantity" class="card-text"
+                    style="margin-top: 12px;font-size: small; color: grey;font-weight: bold;">{{myCardInfo.quantity}}
+                </p>
+                <div class="card-text d-flex">
+                    <div class="me-4" id="price">
+                        <p><img src="assets/baseline_currency_rupee_black_24dp.png"
+                                style="margin-left:-4px; margin-top: -2px;" alt="">{{myCardInfo.offerPrice}}
+                        </p>
+                    </div>
+                    <div class="me-4">
+                        <p id="itemActualPrice"><del>{{myCardInfo.actualPrice}}</del></p>
+                    </div>
+                    <div id="itemOfferPrice">
+                        <p>{{myCardInfo.offer}}&percnt; off</p>
+                    </div>
+                </div>
+                <div style="margin-left:1.5rem;">
+                    <a href="#" class="btn btn-outline-light btn-sm mt-3" id="addItem">Add Item</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-3">
+                    <h6>Get to Know Us</h6>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Press Releases</p>
+                    <p>Amazon Cares</p>
+                    <p>Gift a Smile</p>
+                    <p>Amazon Science</p>
+                </div>
+                <div class="col-3">
+                    <h6>Connect with Us</h6>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+                </div>
+                <div class="col-3">
+                    <h6>Make Money with Us</h6>
+                    <p>Sell on Amazon</p>
+                    <p>Sell under Amazon Accelerator</p>
+                    <p>Amazon Global Selling</p>
+                    <p>Become an Affiliate</p>
+                    <p>Fulfilment by Amazon</p>
+                    <p>Advertise Your Products</p>
+                    <p>Amazon Pay on Merchants</p>
+                </div>
+                <div class="col-3">
+                    <h6>Let Us Help You</h6>
+                    <p>COVID-19 and Amazon</p>
+                    <p>Your Account</p>
+                    <p>Returns Centre</p>
+                    <p>100% Purchase Protection</p>
+                    <p>Amazon App Download</p>
+                    <p>Amazon Assistant Download</p>
+                    Help
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+</head>
+
+<body>
+
+    <div class="card shadow me-2 ms-2 mt-3 p-2" style="width: 18rem;" *ngFor="let myCardData of data">
+        <img style="width: 250px; height: 250px;" src="{{myCardData.avatar}}"
+            class="img-fluid img-thumbnail mx-auto d-block">
+        <div class="card-body">
+            <h5 class="card-title" style="margin-left:-15px; color: brown;">{{myCardData.first_name}}
+                {{myCardData.last_name}}</h5>
+            <p class="card-text" style="color:blue;"><i class="fa-solid fa-envelope"
+                    style="margin-left:-15px; color: blue;"></i>&nbsp;
+                <a href="{{myCardData.email}}">{{myCardData.email}}</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

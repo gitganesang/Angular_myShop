@@ -1,0 +1,19 @@
+<div class="card mx-auto" style="width: 35rem">
+    <div class="card-header text-center">My TODO App</div>
+    <div class="card-body">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="listItem"></textarea>
+        <button type="button" class="btn btn-outline-primary mt-2" (click)="addToList()">
+            Add
+        </button>
+        <button type="button" class="btn btn-outline-primary mt-2" (click)="sortByComplete()">
+            Sort By Completed
+        </button>
+        <button type="button" class="btn btn-outline-primary mt-2" (click)="sortByCreate()">
+            Sort By Created
+        </button>
+    </div>
+    <div class="card-body">
+        <!-- <app-todo-list [lists]="service.listsData" [sortBy]="sortBy" (makCompleteEvent)="markComplete($event)"
+            (deleteEvent)="deleteItem($event)"></app-todo-list> -->
+    </div>
+</div>

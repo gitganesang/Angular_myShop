@@ -1,0 +1,82 @@
+.card:hover {
+    background-color:cornsilk !important;
+    border-radius: 20px;
+}
+
+.nav-item:hover {
+    background-color: aqua;
+    border-radius: 10px;
+
+}
+
+.nav-link {
+    font-weight: bold;
+    color: brown;
+
+}
+
+.navbar {
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+form>button:nth-of-type(2):hover {
+    background-color: aqua;
+}
+
+#cart {
+    color: blueviolet;
+}
+
+#search:hover,
+#cart:hover,
+#profile:hover {
+    background-color: aqua;
+}
+
+footer {
+    background-color: aqua;
+    border-radius: 10pt;
+    padding: 10pt;
+}
+
+footer p:hover {
+    color: darkorchid;
+}
+
+.card {
+    display: inline-block;
+    margin-right: 10pt;
+}
+
+.card-body p {
+    margin-bottom: 1px;
+}
+
+#addItem {
+    border-radius: 2px;
+    width: 8rem;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+
+}
+
+#price {
+    font-weight: bold;
+}
+
+#itemOfferPrice {
+    font-weight: bold;
+    color: green;
+}
+
+#addItem:hover {
+    border-style: outset;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+.navbar-brand {
+    border-radius: 10px;
+}
