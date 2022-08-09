@@ -12,7 +12,7 @@ import { MyRegisterFormService } from './service/my-register-form.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyRegisterFormComponent } from './components/my-register-form/my-register-form.component';
 import { MyToDoListComponent } from './components/my-to-do-list/my-to-do-list.component';
-
+import { SortTodoPipe } from './pipe/sort-todo-pipe';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { MyToDoListComponent } from './components/my-to-do-list/my-to-do-list.co
     MyProfileCardComponent,
     MyRegisterFormComponent,
     MyToDoListComponent,
+    SortTodoPipe,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +32,7 @@ import { MyToDoListComponent } from './components/my-to-do-list/my-to-do-list.co
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    
+
   ],
   providers: [MyRegisterFormService],
   bootstrap: [AppComponent]

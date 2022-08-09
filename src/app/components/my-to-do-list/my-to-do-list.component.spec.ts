@@ -8,10 +8,13 @@ describe('MyToDoListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MyToDoListComponent ]
+      declarations: [MyToDoListComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
+  });
+
+  beforeEach(() => {
     fixture = TestBed.createComponent(MyToDoListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

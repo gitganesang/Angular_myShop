@@ -12,8 +12,8 @@ const routes: Routes = [
   { path: 'my-inventory', component: MyInventoryComponent },
   { path: 'my-profile-card', component: MyProfileCardComponent },
   { path: 'my-register-form', component: MyRegisterFormComponent },
-  { path: 'my-to-component', component: MyToDoComponent },
-  { path: 'app-my-to-do-list', component: MyToDoListComponent },
+  { path: 'my-to-do', component: MyToDoComponent },
+  { path: 'my-to-do-list', component: MyToDoListComponent },
 
 ];
 
